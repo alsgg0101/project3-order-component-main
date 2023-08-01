@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+:root {
+    --clr--primary--pale-blue: hsl(225, 100%, 94%);
+    --clr--primary--bright-blue: hsl(245, 75%, 52%);
+
+    --clr--neutral--very-pale-blue: hsl(225, 100%, 98%);
+    --clr--neutral--desaturated-blue: hsl(224, 23%, 55%);
+    --clr--neutral--dark-blue: hsl(223, 47%, 23%);
+
+    --ff: 'Red Hat Display', sans-serif;
+
+    --fw--medium: 500;
+    --fw--bold: 700;
+    --fw--black: 900;
+}
+
+
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--clr--primary--pale-blue);
+
+    font-family: var(--ff);
+    font-size: 1rem;
+    color: var(--clr--neutral--desaturated-blue);
+
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--clr--neutral--very-pale-blue);
+    border-radius: 1rem;
+    width: 25rem;
+    overflow: hidden;
+    box-shadow: 0 18px 20px hsl(225, 94%, 88%);;
+}
+
+.container__image {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.content {
+    padding: 2.5rem;
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+}
+
+.container__title {
+    color: var(--clr--neutral--dark-blue);
+    font-weight: var(--fw--black);
+}
+
+.container__subscription {
+    background-color: hsl(225, 100%, 95%);
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.subscription__content {
+    display: flex;
+    text-align: left;
+    gap: 1rem;
+}
+
+.annual-plan {
+    color: var(--clr--neutral--dark-blue);
+    font-weight: var(--fw--black);
+}
+
+.change a{
+    color: var(--clr--primary--bright-blue);
+    font-weight: var(--fw--bold);
+    font-size: 0.9rem;
+}
+
+.change a:hover {
+    text-decoration: none;
+    color: hsl(245, 75%, 70%);
+}
+
+.button {
+    background-color: var(--clr--primary--bright-blue);
+    border-color: transparent;
+    border-radius: 0.5rem;
+    color: var(--clr--neutral--very-pale-blue);
+    font-family:'Red Hat Display', sans-serif;
+    font-weight: var(--fw--bold);
+    padding: 0.7rem;
+    box-shadow: -2px 15px 20px hsl(225, 94%, 88%);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(245, 73%, 63%);
+}
+
+.cancel-order a{
+    font-weight: var(--fw--black);
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--clr--neutral--desaturated-blue);
+}
+
+.cancel-order a:hover {
+    color: var(--clr--neutral--dark-blue);
+}
